@@ -31,6 +31,25 @@ const routes: Routes = [
     path: 'forgot-password',
     loadChildren: () => import('./forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
   },
+
+  {
+    path: 'difficulty',
+    loadChildren: () => import('./difficulty/difficulty.module').then( m => m.DifficultyPageModule)
+  },  {
+    path: 'languages',
+    loadChildren: () => import('./languages/languages.module').then( m => m.LanguagesPageModule)
+  },
+  {
+    path: 'instructions',
+    loadChildren: () => import('./instructions/instructions.module').then( m => m.InstructionsPageModule)
+  },
+  {
+    path: 'individually',
+    loadChildren: () => import('./individually/individually.module').then( m => m.IndividuallyPageModule)
+  },
+
+
+
 ];
 
 @NgModule({

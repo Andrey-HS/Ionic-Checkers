@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminPage implements OnInit {
 
-  constructor() { }
+  
+
+  constructor(private router: Router) { }
+
+  myAction(){
+    this.router.navigate(['login'])
+  }
+
+  iniciarPage(){
+    this.router.navigate(['difficulty'])
+  }
+
+  languagesPage(){
+    this.router.navigate(['languages'])
+  }
+
+  instructionsPage(){
+    this.router.navigate(['instructions'])
+  }
 
   ngOnInit() {
   }
